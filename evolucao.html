@@ -1,0 +1,328 @@
+<html>
+<meta charset="utf-8">
+<head>
+    <title> Evolução Estrelar </title>
+</head>
+
+<body style="width:1220;margin:auto">
+
+<!-------------------------------------------------------->
+<div class="introducao">
+    <table align="center">
+        <tr>
+            <td width="50%" style="vertical-align:top">
+                <p style="text-align:center">
+                    <br> <b> EVOLUÇÃO ESTELAR </b>
+                </p>
+                <p style="text-align:justify">
+                    Toda estrela passa por um processo evolutivo que se inicia com o seu nascimento no interior de uma
+                    nuvem interestelar e que culmina com a sua morte depois de bilhões ou até trilhões de anos. A morte
+                    pode ser lenta e tranquila como uma anã branca ou explosiva e arrasadora como as supernovas,
+                    verdadeiros espetáculos no céu dos quais sobram objetos intrigantes como estrelas de nêutrons ou
+                    buracos negros. O material que resta após a morte, pode ser aproveitado para originar novas
+                    estrelas, gerando um ciclo de vida e morte das estrelas no universo. O nascimento de uma estrela se
+                    inicia com uma instabilidade gravitacional dentro de uma nuvem molecular no meio interestelar.
+                    Aglutinações de matéria em alguns locais da nuvem formam pequenos glóbulos que por sua vez, atraem a
+                    matéria circundante aumentando cada vez mais a massa e consequentemente, a atração gravitacional. A
+                    energia cinética dos átomos em queda livre sobre o centro dos glóbulos é dissipada, aumentando a
+                    energia cinética média do gás contido nos glóbulos, provocando um aumento da temperatura. A massa do
+                    gás aquecido é um embrião de uma nova estrela.
+                    Estrelas recém-formadas no interior das nuvens podem "iluminá-las" como no caso da nebulosa de Órion
+                    (imagem ao lado). Situada na constelação de Órion, também conhecida como M42 ou NGC 1976, é por
+                    muitos, considerada como um dos mais belos objetos celestes que se pode observar.
+            </td>
+            <td>
+                <div align="center">
+                    <img src="images/orion_hubble_960.jpg" width="600" height="400" alt=""/>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+
+    var imagens = [
+        "images/nebulosa01.png",
+        "images/anamarrom.jpg",
+        "images/anavermelha.jpg",
+        "images/sol.jpg",
+        "images/supergiganteazul1.jpg",
+        "images/supergiganteazul2.jpg",
+        "images/giganteazul.jpg",
+    ];
+
+    var textos = [
+        " A massa inicial da protoestrela é o principal determinante do tipo de estrela que irá nascer, dos processos de evolução por quais a estrela passará e também da morte que a estrela terá. Selecione na barra abaixo (Ms = massa solar) a massa inicial da protoestrela. ",
+
+        " A massa mínima necessária para a formação de uma estrela é 0,08 Ms. Os corpos que resultam de aglomerações com massas entre 0,01 Ms e 0,08 Ms são chamados de anãs marrons. Para saber mais, click sobre a Anã Marrom. ",
+
+        " Estrelas com massas muito pequenas, entre 0,08 Ms e 0,45 Ms, realizam a fusão do hidrogênio em hélio no núcleo muito lentamente, por isso possuem temperaturas superficiais relativamente baixas, são as anãs vermelhas. Para saber a respeito da evolução das anãs vermelhas, click sobre imagem.  ",
+
+        " As estrelas com massas entre 0,45 e 8 massas solares são estrelas amareladas do tipo do Sol. O Sol é considerado uma estrela de tamanho médio. Click sobre a imagem para saber a respeito da evolução de estrelas do tipo do Sol.",
+
+        " Estrelas com massas entre 8 e 25 massas solares são gigantes azuis. Elas são bastante raras. Click sobre a imagem para saber a respeito da evolução das gigante azuis.",
+
+        " Estrelas com massas entre 25 e 100 massas solares são supergigantes azuis. Elas são muito raras. Click sobre a imagem para saber a respeito da evolução das supergigante azuis.",
+
+        " Uma estrela que  inicia sua vida com massa acima de 100 massas solares é uma supergigante azul. Ela ejeta parte de sua massa e depois evolui como uma estrela de até 100 massas solares. ",
+    ];
+
+</script>
+<div>
+
+    <table align="center" style="width:1220;margin:auto">
+        <tr style="height:500">
+            <td width="50%" style='vertical-align:bottom'>
+                <p style="text-align:left">
+                    O glóbulo que tinha uma temperatura muito baixa agora se superaquece e, se houver massa suficiente,
+                    aumenta sua temperatura a ponto de emitir energia luminosa. Ele se torna uma enorme esfera de gás
+                    resplandecente chamada de protoestrela (imagem abaixo). Quando a temperatura atinge alguns milhões
+                    de graus Celsius, a protoestrela começa a realizar fusão nuclear do hidrogênio em hélio, marcando o
+                    nascimento de uma nova estrela.
+                </p>
+                <div align="center">
+                    <img src="images/protoestrela.jpg">
+                </div>
+            </td>
+            <td width="50%" style='vertical-align:bottom;height:500'>
+
+                <div id="texto" align="justify">
+                    A massa inicial da protoestrela é o principal determinante do tipo de estrela que irá nascer, dos
+                    processos de evolução por quais a estrela passará e também da morte que a estrela terá. Selecione na
+                    barra abaixo (Ms = massa solar) a massa inicial da protoestrela.
+                </div>
+                <div>
+                    <canvas id="figura" width=600 height=400 onClick="mostra('extra'+imassa)"></canvas>
+                </div>
+                <div id="extra1"
+                     style="position:absolute;top:410;left:60;background-color:rgba(230,230,230,1.7);width:1220;height:510;visibility:hidden">
+                    <p style="text-align:left"> Anãs marrons possuem massa superior a de um planeta e inferior a
+                        necessária para realizar a fusão do hidrogênio como uma estrela regular. Por isso são
+                        consideradas estrelas fracassadas. Devido à baixa massa, as anãs marrons são pouco luminosas em
+                        comparação com as estrelas, por isso são difíceis de serem detectadas. A maior parte da radiação
+                        que emitem se situa na faixa do infravermelho, próximo do espectro visível. Especula-se que o
+                        número de anãs marrons no universo seja comparável ao número de estrelas. </p> <br> <br> <br>
+                    <p style="text-align:center">
+                        <img src="images/anamarrom.jpg" ," height="200" width= "300">
+                    <p style="text-align:center" onClick="esconde('extra1')">[fechar]</span>
+                </div>
+                <div id="extra2"
+                     style="position:absolute;top:410;left:60;background-color:rgba(230,230,230,1.7);width:1220;height:510;visibility:hidden">
+                    <p style="text-align:center"> As anãs vermelhas permanecem por centenas de bilhões de anos queimando
+                        hidrogênio, de tal maneira que a idade do universo não é suficiente para que elas tenham
+                        evoluído além da sequência principal. Depois que o hidrogênio no núcleo de uma anã vermelha se
+                        esgotar, a temperatura central não será suficiente para iniciar a fusão do hélio. As anãs
+                        vermelhas de menores massas deverão aumentar a temperatura e luminosidade devido à contração
+                        gravitacional tornando-se anãs brancas (com núcleo de hélio), enquanto as de massas maiores
+                        devem aumentar de tamanho, passando pela fase de gigante vermelha antes de se tornarem anãs
+                        brancas. As anãs brancas irradiarão energia térmica por bilhões de anos até tornarem-se anãs
+                        negras. </p> <br> <br> <br>
+                    <table align="center" style="text-align:center;vertical-align:middle">
+                        <tr>
+                            <td><img src="images/anavermelha.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/minisol.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/anabranca.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/ananegra.jpg" , height="150" width="200"></td>
+                    </table>
+                    <p style="text-align:center" onClick="esconde('extra2')">[fechar]</span>
+
+                </div>
+
+                <div id="extra3"
+                     style="position:absolute;top:410;left:60;background-color:rgba(230,230,230,1.7);width:1220;height:510;visibility:hidden">
+                    <p style="text-align:center">Quando o hidrogênio do núcleo se esgota, uma estrela do tipo do Sol
+                        inicia a fusão de hidrogênio em uma camada acima do núcleo de hélio, gerando uma pressão tal,
+                        que faz com que as camadas externas se expandam e a estrela se torna uma gigante vermelha. Sem
+                        realizar fusão, o núcleo de hélio de uma gigante vermelha não gera pressão suficiente para
+                        conter a gravidade que o esmaga. A energia proveniente da contração aumenta a temperatura o
+                        suficiente para que se inicie a fusão do hélio em carbono, liberando energia para conter o
+                        colapso gravitacional. Sem atingir temperaturas suficientes para a fusão do carbono, o núcleo
+                        inerte é comprimido pelas camadas externas até que os elétrons ficam próximos o suficiente a
+                        ponto de surgir entre eles uma força repulsiva, gerando uma pressão denominada pressão de
+                        degenerescência que se opõe à pressão gravitacional, fazendo cessar a compressão do núcleo de
+                        carbono. As camadas acima no núcleo continuam a processar hélio em carbono e hidrogênio em hélio
+                        liberando energia suficiente para expulsar as camadas mais externas da estrela. A estrela então
+                        se divide em um caroço central superaquecido, composto principalmente de carbono e, uma região
+                        de gás mais frio em volta do caroço. O gás ejetado será ionizado pela radiação emitida pelo
+                        caroço central e emitirá luz. Quando observadas, essas camadas de gás com um caroço central
+                        apresentam o aspecto de discos parecidos com planetas e por isso são conhecidas como nebulosas
+                        planetárias. O caroço de carbono remanescente no centro da nebulosa planetária é muito denso e
+                        possui altíssimas temperaturas, no entanto é pouco luminoso por ser relativamente muito pequeno.
+                        Por causa de seu tamanho e cor ele é chamado de anã branca. Uma anã branca não realiza fusão
+                        nuclear e, portanto não é a rigor uma estrela. Ela emitirá energia térmica por bilhões de anos
+                        até se tornar um objeto frio, denso e escuro chamado de anã negra. </p> <br> <br> <br>
+                    <table align="center" style="text-align:center;vertical-align:middle">
+                        <tr>
+                            <td><img src="images/sol.jpg" , height="120" width="170"></td>
+                            <td><img src="images/seta.jpg" , height="30"></td>
+                            <td><img src="images/minisol.jpg" , height="120" width="170"></td>
+                            <td><img src="images/seta.jpg" , height="30"></td>
+                            <td><img src="images/gigantevermelha.jpg" , height="120" width="170"></td>
+                            <td><img src="images/seta.jpg" , height="30"></td>
+                            <td><img src="images/nebulosa01.png" , height="120" width="170"></td>
+                            <td><img src="images/seta.jpg" , height="30"></td>
+                            <td><img src="images/anabranca.jpg" , height="120" width="170"></td>
+                            <td><img src="images/seta.jpg" , height="30"></td>
+                            <td><img src="images/ananegra.jpg" , height="120" width="170"></td>
+                    </table>
+                    <p style="text-align:center" onClick="esconde('extra3')">[fechar]</span>
+                </div>
+                <div id="extra4"
+                     style="position:absolute;top:410;left:60;background-color:rgba(230,230,230,1.7);width:1220;height:510;visibility:hidden">
+                    <p style="text-align:center">Depois que saem da sequencia principal e se tornam supergigantes
+                        vermelhas, estrelas com massas maiores 8Ms atingem temperaturas suficientes para realizar não só
+                        a fusão do hélio em carbono, mas também a fusão do carbono em oxigênio e assim sucessivamente
+                        até produzir ferro no núcleo. A fusão do ferro não é energeticamente favorável, pois requer mais
+                        energia para acontecer do que a energia que libera. Sem produzir energia, a pressão no núcleo de
+                        ferro diminui tornando-se insuficiente para conter o colapso gravitacional, finalmente a
+                        gravidade vence. As camadas externas começam a “cair” sobre o núcleo e a pressão gravitacional
+                        aumenta o suficiente para vencer a pressão de degenerescência dos elétrons, comprimindo a
+                        matéria central de tal maneira que os elétrons se unem aos prótons formando nêutrons e emitindo
+                        neutrinos. Em reação à extrema compressão o núcleo estelar se expande violentamente. A
+                        gigantesca explosão libera uma enorme quantidade de energia, fazendo a estrela brilhar (por um
+                        curto período de tempo) o equivalente ao de uma galáxia inteira. Este evento é conhecido como
+                        explosão de supernova. Na explosão, a maior parte da massa da estrela é ejetada no meio
+                        interestelar formando um remanescente com um aspecto similar a uma nebulosa planetária. Para
+                        estrelas com massas entre 8Ms e 25Ms, resta após a explosão de uma supernova um caroço central
+                        extremamente compacto, composto basicamente de nêutrons. Os nêutrons ficam tão próximos que
+                        surge entre eles, assim como entre os elétrons de uma anã branca, uma pressão de degenerescência
+                        que se opõe ao colapso gravitacional, mantendo o equilíbrio do caroço remanescente, agora
+                        denominado estrela de nêutrons. Estrelas de nêutrons possuem altíssimas velocidades de rotação e
+                        campos magnéticos acentuados. Algumas delas emitem radiação periodicamente, sendo conhecidas
+                        como pulsares. Assim como as anãs brancas, estrelas de nêutrons não são efetivamente estrelas,
+                        pois não realizam fusão nuclear.</p> <br> <br>
+                    <table align="center" style="text-align:center;vertical-align:middle">
+                        <tr>
+                            <td><img src="images/supergiganteazul1.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/gigantevermelha.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/supernova2.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/buraconegro.jpg" , height="150" width="200"></td>
+                    </table>
+                    <p style="text-align:center" onClick="esconde('extra4')">[fechar]</span>
+
+                </div>
+
+                <div id="extra5"
+                     style="position:absolute;top:410;left:60;background-color:rgba(230,230,230,1.7);width:1220;height:510;visibility:hidden">
+                    <p style="text-align:center">Durante a fase de supergigante vermelha, estrelas com massa maiores a
+                        25Ms, passam pela fase de Wolf-Rayet, em que possuem brilho variável e um envoltório de poeira
+                        ejetado devido à forte pressão de radiação. Para essas estrelas, o caroço que resta da explosão
+                        de supernova é tão massivo que nem mesmo a pressão de degenerescência de nêutrons pode conter o
+                        seu colapso. Ele implode formando um corpo de densidade tão elevada que a aceleração da
+                        gravidade local não permite que nem mesmo a luz escape de dentro dele. Esse corpo é denominado
+                        buraco negro. O buraco negro é a morte definitiva de uma estrela supermassiva. Uma vez que de
+                        buracos negros não sai nenhuma informação, eles são detectados através da ação que exercem sobre
+                        suas vizinhanças. Por possuírem elevada aceleração gravitacional eles tendem a atrair a matéria
+                        circundante. Nuvens de gás e poeira que orbitam regiões invisíveis (supostos buracos negros)
+                        emitem radiações que são detectadas. Buracos negros podem ser detectados também a partir da
+                        observação de estrelas binárias em que só uma das parceiras é visível. Não existem limites
+                        inferior e superior para a massa de um buraco negro. Poderíamos, inclusive, estar imersos dentro
+                        de um grande buraco negro sem nos dar conta disso.</p> <br> <br> <br>
+                    <table align="center" style="text-align:center;vertical-align:middle">
+                        <tr>
+                            <td><img src="images/supergiganteazul2.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/gigantevermelha.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/supernova1.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/buraconegro.jpg" , height="150" width="200"></td>
+                    </table>
+                    <p style="text-align:center" onClick="esconde('extra5')">[fechar]</span>
+
+                </div>
+
+                <div id="extra6"
+                     style="position:absolute;top:410;left:60;background-color:rgba(230,230,230,1.7);width:1220;height:510;visibility:hidden">
+                    <p style="text-align:center">Durante a fase de supergigante vermelha, estrelas com massa maiores a
+                        25Ms, passam pela fase de Wolf-Rayet, em que possuem brilho variável e um envoltório de poeira
+                        ejetado devido à forte pressão de radiação. Para essas estrelas, o caroço que resta da explosão
+                        de supernova é tão massivo que nem mesmo a pressão de degenerescência de nêutrons pode conter o
+                        seu colapso. Ele implode formando um corpo de densidade tão elevada que a aceleração da
+                        gravidade local não permite que nem mesmo a luz escape de dentro dele. Esse corpo é denominado
+                        buraco negro. O buraco negro é a morte definitiva de uma estrela supermassiva. Uma vez que de
+                        buracos negros não sai nenhuma informação, eles são detectados através da ação que exercem sobre
+                        suas vizinhanças. Por possuírem elevada aceleração gravitacional eles tendem a atrair a matéria
+                        circundante. Nuvens de gás e poeira que orbitam regiões invisíveis (supostos buracos negros)
+                        emitem radiações que são detectadas. Buracos negros podem ser detectados também a partir da
+                        observação de estrelas binárias em que só uma das parceiras é visível. Não existem limites
+                        inferior e superior para a massa de um buraco negro. Poderíamos, inclusive, estar imersos dentro
+                        de um grande buraco negro sem nos dar conta disso. </p> <br> <br> <br>
+                    <table align="center" style="text-align:center;vertical-align:middle">
+                        <tr>
+                            <td><img src="images/supergiganteazul2.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/gigantevermelha.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/supernova1.jpg" , height="150" width="200"></td>
+                            <td><img src="images/seta.jpg" , height="50"></td>
+                            <td><img src="images/buraconegro.jpg" , height="150" width="200"></td>
+                    </table>
+                    <p style="text-align:center" onClick="esconde('extra6')">[fechar]</span> </p>
+                </div>
+                <script>
+                    function esconde(item) {
+                        document.getElementById(item).style.visibility = "hidden";
+                    }
+
+                    function mostra(item) {
+                        console.log(item)
+                        document.getElementById(item).style.visibility = "visible";
+                    }
+
+                    var ctx = document.getElementById("figura").getContext("2d");
+                    var img = new Image();
+                    img.src = "images/nebulosa01.png";
+                    window.onload = function () {
+                        ctx.drawImage(img, 0, 0, 600, 400)
+                    }
+                </script>
+            </td>
+    </table>
+</div>
+<div>
+    <p style="text-align:center">
+    <div align="center">
+        <input type="range"
+               id="massa"
+               min="0" max="6"
+               value="0"
+               onChange="atualiza()">
+        <div align="center" id="valordamassa"><b> Escolha a Massa </b></div>
+        </p>
+    </div>
+    <script>
+        var imassa = 0;
+
+        function atualiza() {
+            imassa = parseInt(document.getElementById("massa").value);
+
+            var massas = [
+                "<b> Escolha a Massa </b> ",
+                "<b>(0.01 a 0.08)Ms </b>",
+                "<b>(0.08 a 0.45)Ms </b>",
+                "<b>(0.45 a 8)Ms </b> ",
+                "<b> (8 a 25)Ms </b>",
+                "<b> (25 a 100)Ms </b>",
+                " <b> > 100 Ms </b>",
+            ];
+            document.getElementById("valordamassa").innerHTML = massas[imassa];
+            //document.getElementById("figura").src = imagens[imassa];
+            img.src = imagens[imassa];
+            ctx.drawImage(img, 0, 0, 600, 400);
+            document.getElementById("texto").innerHTML = textos[imassa];
+        }
+    </script>
+</div>
+
+</div>
+</div>
+<!-------------------------------------------------------->
+</body>
+</html>
